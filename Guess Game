@@ -1,0 +1,28 @@
+mport random as ran
+i = 1
+num = ran.randint(1,20)
+while i<3:
+    a = int(input("Guess a number between 1 to 20: "))
+    if a > num:
+        print("Try to guess a smaller number")
+    elif a < num:
+        print("Try to guess a larger number")  
+    elif a == num:
+        print("You Guessed it right!!")
+        break
+    else:
+        print("Enter the value right")
+    i +=1
+
+while i == 3:
+    a = int(input("Guess a number between 1 to 20: "))
+    if a == num:
+        print("You Guessed it right!!")
+    if a != num:
+        print(f"Kyun re madar*****d. {num} number tha")
+
+    i +=1
+# Acha mein ne 2nd loop is wja se lgya he k jab 3 baar galat guess hota he to kyun re madar***d k sath try to guess
+# smaller number bhi aata he. I could not think of any other way that is why I made another loop to stay safe
+# Baki tera code bhi check kiya and it's quite nice.   
+ 
