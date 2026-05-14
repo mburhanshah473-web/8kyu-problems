@@ -25,4 +25,32 @@ while i == 3:
 # Acha mein ne 2nd loop is wja se lgya he k jab 3 baar galat guess hota he to kyun re madar***d k sath try to guess
 # smaller number bhi aata he. I could not think of any other way that is why I made another loop to stay safe
 # Baki tera code bhi check kiya and it's quite nice.   
- 
+
+yeh maine kiya hai single loop k through teri wali logic use karte hua......
+asal me masla yeh aa rha tha k jo tu ney logic lagai hui thi if a>num toh try to think of a smaller number and same for larger number 
+asal me jo if or elif hain wo line wise chalty hai ek sequence se toh jab hum ne tries 3 deni hain toh 3 k bad program toh ruk jaye ga lekin tu ney 
+madarc***d wali condition larger or smaller number think karne wali condition k nechy rakhi thi toh jab tries bhi khatam ho gayin to hota asy hai k jo 
+bhi condition pehle true ho jaye gi toh wohi execute ho gi or program wahin stop ho jaye ga or agar number hum ne sahi guess kar liya hai toh wahin
+loop break bhi karna hai is liye us condition k nechy break lga diya hai baki sara main masla sequence ka tha jo k sirf final result sahi any k liye
+hum ne pehle lgai hai 
+
+import random as ran
+i = 1
+num = ran.randint(1,20)
+while i<=3:
+    a = int(input("Guess a number between 1 to 20: "))
+    if a == num:
+        print("You Guessed it right!!") 
+        break
+    elif i==3:
+        print(f"Kyun re madar*****d. {num} number tha") 
+    elif a > num:
+          print("Try to guess a smaller number")
+    elif a < num:
+        print("Try to guess a larger number")        
+        
+    else:
+        print("Enter the right value ")
+    i +=1
+
+
