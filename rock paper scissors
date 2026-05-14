@@ -1,0 +1,22 @@
+import random
+choices=["rock","paper","scissors"]
+random_move = choices [random.randint(0,2)]
+move=input("Play your move: ").lower()
+if move==random_move:
+    print(f"Draw...!!! the system also choose {random_move}")
+elif move==choices[0] and random_move== choices[1]:
+    print(f"You lose...!!! the system choose {random_move}😏")
+elif move==choices[1] and random_move== choices[0]:
+    print(f"You won 🥳...!!! the system choose {random_move}")
+elif move==choices[0] and random_move== choices[2]:
+    print(f"You won 🥳...!!! the system choose {random_move}")
+elif move==choices[2] and random_move== choices[0]:
+    print(f"You lose...!!! the system choose {random_move} 😏")
+elif move==choices[1] and random_move== choices[2]:
+    print(f"You lose...!!! the system choose {random_move} 😏")
+elif move==choices[2] and random_move== choices[1]:
+    print(f"You won 🥳...!!! the system choose {random_move}")
+else:
+    print("Please enter the valid move....!!!")
+        
+    
