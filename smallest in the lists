@@ -1,0 +1,6 @@
+list1=[34, 15, 88, 2]
+list2=[34, -345, -1, 100]
+list1.sort()
+list2.sort()
+print(list1[0])
+print(list2[0])
